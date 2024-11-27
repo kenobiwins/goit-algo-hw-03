@@ -1,8 +1,8 @@
 import re
 
 def normalize_phone(phone):
-    r = r'\D'
-    cleaned_phone = re.sub(r,'',phone)
+    regex = r'\D'
+    cleaned_phone = re.sub(regex,'',phone)
 
     FULL_NUMBER_LEN = 12
     WITHOUD_CODE_LEN = 10
